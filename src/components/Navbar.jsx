@@ -17,6 +17,7 @@ const navbar = () => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-10">
         <li><a href="#home" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Home</a></li>
+        <li><a href="#about" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">About</a></li>
         <li><a href="#skills" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Skills</a></li>
         <li><a href="#porto" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Portfolio</a></li>
         <li><a href="#contact" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Contact</a></li>

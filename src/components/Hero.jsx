@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="flex flex-col items-center justify-center min-h-screen px-10 py-35 bg-black text-white">
+    <section id="home" className="flex flex-col items-center justify-center min-h-screen px-10 pt-25 bg-black text-white">
       <motion.div 
         className="flex flex-col items-center gap-8"
         initial={{ opacity: 0, y: -20 }}
@@ -64,7 +64,7 @@ const Hero = () => {
           </p>
 
           {/* Tombol Aksi */}
-          <div className="mt-6 flex flex-row items-center justify-center gap-4">
+          <div className="mt-6 mb-0 flex flex-row items-center justify-center gap-4">
             <motion.a 
               href="#portfolio"
               whileHover={{ scale: 1.1 }}
