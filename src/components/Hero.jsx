@@ -18,7 +18,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="flex flex-col items-center justify-center min-h-screen px-10 pt-25 bg-black text-white">
+    <section id="home" className="flex flex-col items-center justify-center min-h-screen
+    px-10 pt-25 bg-black text-white">
       <motion.div 
         className="flex flex-col items-center gap-8"
         initial={{ opacity: 0, y: -20 }}
@@ -56,21 +57,20 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="mt-3 mx-7 text-lg text-gray-300">
+          <p className="mt-3 px-15 text-lg text-gray-300">
             A <span className="text-yellow-400">Developer</span> who loves crafting software,  
             a <span className="text-yellow-400">Network and System Engineer</span> passionate about infrastructure,  
             and a <span className="text-yellow-400">Culture Enthusiast</span> with a deep love for arts, specially
-            <span className="text-yellow-400"> opera theater, karawitan, and orchestra.</span>
+            <span className="text-yellow-400"> karawitan, musical theater, and orchestra.</span>
           </p>
 
           {/* Tombol Aksi */}
-          <div className="mt-6 mb-0 flex flex-row items-center justify-center gap-4">
+          <div className="mt-6 mb-0 flex flex-row items-center justify-center gap-8">
             <motion.a 
               href="#portfolio"
               whileHover={{ scale: 1.1 }}
               className="rounded-full bg-yellow-400 px-6 py-3 text-black font-semibold shadow-lg 
-              transition-all duration-300 hover:bg-yellow-500"
-            >
+              transition-all duration-300 hover:bg-yellow-500">
               See My Works
             </motion.a>
             
@@ -78,8 +78,7 @@ const Hero = () => {
               href="#contact"
               whileHover={{ scale: 1.1 }}
               className="rounded-full border border-yellow-400 px-6 py-3 text-yellow-400 font-semibold shadow-lg 
-              transition-all duration-300 hover:bg-yellow-500 hover:text-black"
-            >
+              transition-all duration-300 hover:bg-yellow-500 hover:text-black">
               Contact Me
             </motion.a>
           </div>

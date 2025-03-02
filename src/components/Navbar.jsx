@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BiX, BiMenu } from "react-icons/bi";
+import { GoArrowDownRight } from "react-icons/go";
 
 const navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +16,22 @@ const navbar = () => {
       <a href="#home" className="bg-clip-text text-3xl font-semibold">GENTA.Porto</a>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-10">
-        <li><a href="#home" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Home</a></li>
-        <li><a href="#about" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">About</a></li>
-        <li><a href="#skills" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Skills</a></li>
-        <li><a href="#porto" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Portfolio</a></li>
-        <li><a href="#contact" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Contact</a></li>
+      <ul className="hidden md:flex gap-10 items-center gap-x-8">
+        <li><a href="#about" className="cursor-pointer opacity-80 transition-all duration-300
+        hover:opacity-100 hover:underline hover:underline-offset-4">About Me</a></li>
+        <li><a href="#skills" className="cursor-pointer opacity-80 transition-all duration-300
+        hover:opacity-100 hover:underline hover:underline-offset-4">Skills</a></li>
+        <li><a href="#porto" className="cursor-pointer opacity-80 transition-all duration-300
+        hover:opacity-100 hover:underline hover:underline-offset-4">Portfolio</a></li>
+        <li><a href="#contact" className="cursor-pointer opacity-80 transition-all duration-300
+        hover:opacity-100 hover:underline hover:underline-offset-4">Contact</a></li>
+        <li>
+          <button className="px-4 py-2 rounded-full font-semibold border-yellow-400 flex items-center
+          gap-1 bg-yellow-400 cursor-pointer hover:scale-110 transition-all duration-200 ease-in-out text-black">Hire Me
+          <span><GoArrowDownRight />
+          </span>
+          </button>
+        </li>
       </ul>
 
       {/* Toggle Button */}
@@ -30,16 +41,37 @@ const navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed right-0 top-[85px] flex h-screen w-1/2 flex-col items-start justify-start gap-10 bg-black/90 p-12">
-          <ul className="flex flex-col gap-6">
-            <li><a href="#home" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Home</a></li>
-            <li><a href="#skills" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Skills</a></li>
-            <li><a href="#porto" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Portfolio</a></li>
-            <li><a href="#contact" className="cursor-pointer opacity-80 transition-all duration-250 hover:opacity-100">Contact</a></li>
+        <div
+          className="fixed right-0 top-[85px] h-screen w-2/5 md:w-1/3 bg-black/90 p-10 flex flex-col 
+          items-center justify-start gap-8 opacity-90 transition-all duration-250 duration-300 ease-in-out translate-x-0">
+          <ul className="flex flex-col gap-4 text-lg text-white items-center">
+            <li>
+              <a href="#about" className="cursor-pointer opacity-80 transition-all duration-250
+              hover:opacity-100 hover:underline">About</a>
+            </li>
+            <li>
+              <a href="#skills" className="cursor-pointer opacity-80 transition-all duration-250
+              hover:opacity-100 hover:underline">Skills</a>
+            </li>
+            <li>
+              <a href="#porto" className="cursor-pointer opacity-80 transition-all duration-250
+              hover:opacity-100 hover:underline">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" className="cursor-pointer opacity-80 transition-all duration-250
+              hover:opacity-100 hover:underline">Contact</a>
+            </li>
+            <li>
+              <button
+                className="px-4 py-2 rounded-full font-semibold flex items-center gap-2 border-yellow-400 
+                bg-yellow-400">
+                Hire Me
+                <span><GoArrowDownRight /></span>
+              </button>
+            </li>
           </ul>
         </div>
       )}
-
     </nav>
   );
 };
