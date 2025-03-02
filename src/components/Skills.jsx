@@ -12,14 +12,21 @@ import {
   FaNetworkWired,
   FaProjectDiagram,
   FaLaravel,
+  FaGitAlt,
+  FaGithub,
+  FaCloudflare,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiCplusplus,
   SiNodered,
   SiArduino,
+  SiMariadb,
   SiMikrotik,
   SiCisco,
+  SiNginx,
+  SiNginxproxymanager,
+  SiApache,
 } from "react-icons/si";
 
 const skillCategories = [
@@ -46,6 +53,7 @@ const skillCategories = [
     skills: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
       { name: "MySQL", icon: <FaDatabase className="text-indigo-400" /> },
+      { name: "MariaDB", icon: <SiMariadb className="text-white" /> },
       { name: "Laravel", icon: <FaLaravel className="text-red-500" /> },
     ],
   },
@@ -64,8 +72,17 @@ const skillCategories = [
     description:
       "Managing Linux systems for servers, automation, and security. I ensure optimized performance and reliability for production environments.",
     skills: [
-      { name: "Linux", icon: <FaLinux className="text-white" /> },
-      
+      { name: "Linux", icon: <FaLinux className="text-gray-300" /> },
+      { name: "Nginx", icon: <SiNginx className="text-green-400" /> },
+      {
+        name: "Proxy Manager",
+        icon: <SiNginxproxymanager className="text-white" />,
+      },
+      { name: "Apache", icon: <SiApache className="text-[#D22128]" /> },
+      {
+        name: "Cloudflare",
+        icon: <FaCloudflare className="text-orange-400" />,
+      },
     ],
   },
   {
@@ -74,10 +91,6 @@ const skillCategories = [
       "Network administration involves configuring and managing networks, ensuring security, and optimizing connections.",
     skills: [
       {
-        name: "Networking",
-        icon: <FaNetworkWired className="text-white" />,
-      },
-      {
         name: "Cisco Router",
         icon: <SiCisco className="text-blue-400" />,
       },
@@ -85,10 +98,6 @@ const skillCategories = [
         name: "Mikrotik Routerboard",
         icon: <SiMikrotik className="text-white text-1xl" />,
       },
-      // {
-      //   name: "Firewall & Security",
-      //   icon: <FaLinux className="text-gray-500" />,
-      // },
     ],
   },
   {
@@ -104,6 +113,14 @@ const skillCategories = [
         name: "Agile & Scrum",
         icon: <FaProjectDiagram className="text-green-400" />,
       },
+      {
+        name: "Git",
+        icon: <FaGitAlt className="text-orange-500" />,
+      },
+      {
+        name: "GitHub",
+        icon: <FaGithub className="text-white" />,
+      },
     ],
   },
 ];
@@ -117,14 +134,14 @@ const Skills = () => {
 
       {/* Kategori Tabs */}
       <div
-        className="flex justify-center flex-wrap gap-3 mb-6 border border-b border-white
+        className="flex justify-center flex-wrap gap-2 md:gap-4 mb-6
         py-5 rounded-3xl"
       >
         {skillCategories.map((category, index) => (
           <button
             key={index}
             onClick={() => setSelectedCategory(index)}
-            className={`px-4 py-2 rounded-lg cursor-pointer transition ${
+            className={`px-4 py-2 rounded-lg cursor-pointer hover:border-yellow-400 hover:border transition ${
               selectedCategory === index
                 ? "bg-yellow-400 text-black font-bold"
                 : "bg-black"
@@ -150,7 +167,7 @@ const Skills = () => {
           {skillCategories[selectedCategory].description}
         </p>
 
-        {/* Ikon Teknologi */}
+        {/* Ikon Tech Stack */}
         <div className="flex justify-center gap-10 flex-wrap">
           {skillCategories[selectedCategory].skills.map((skill, index) => (
             <div

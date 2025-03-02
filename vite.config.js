@@ -5,8 +5,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
-})
+  base: "./",
+  plugins: [react(), tailwindcss()],
+  build: {
+    outDir: "dist", // Pastikan folder output benar
+    sourcemap: true, // Bisa dihapus jika tidak perlu
+  },
+});
