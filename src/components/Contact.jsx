@@ -1,12 +1,34 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div
-      className="w-full mx-auto bg-black text-white sm:py-20 px-4"
+      className="scroll-mt-10 w-full mx-auto bg-black text-white sm:py-20 px-4"
       id="contact"
     >
       <div className="text-center">
@@ -39,15 +61,21 @@ const Contact = () => {
             <div className="flex flex-col gap-4 justify-center md:justify-start text-xl sm:text-2xl md:text-3xl">
               {[
                 {
-                  icon: <FaGithub />,
-                  link: "https://github.com/genta-bahana-nagari",
-                  label: "GitHub",
-                  account: "genta-bahana-nagari",
-                },
-                {
                   icon: <FaLinkedin />,
                   link: "https://www.linkedin.com/in/genta-bahana-nagari",
                   label: "LinkedIn",
+                  account: "genta-bahana-nagari",
+                },
+                {
+                  icon: <FaInstagram />,
+                  link: "https://instagram.com/gentabahananagari",
+                  label: "Instagram",
+                  account: "gentabahananagari",
+                },
+                {
+                  icon: <FaGithub />,
+                  link: "https://github.com/genta-bahana-nagari",
+                  label: "GitHub",
                   account: "genta-bahana-nagari",
                 },
                 {
@@ -57,10 +85,10 @@ const Contact = () => {
                   account: "gentapossenti@gmail.com",
                 },
                 {
-                  icon: <FaInstagram />,
-                  link: "https://instagram.com/gentabahananagari",
-                  label: "Instagram",
-                  account: "gentabahananagari",
+                  icon: <FaDiscord />,
+                  link: "https://discord.com/users/1190112258181837031",
+                  label: "Discord",
+                  account: "genta_bahana_nagari",
                 },
               ].map((social, index) => (
                 <motion.a
@@ -92,8 +120,14 @@ const Contact = () => {
             <h2 className="mb-4 text-2xl font-bold text-white text-center md:text-start max-w-md mx-auto">
               Keep in touch
             </h2>
-            <p className="mb-4 text-sm text-start text-gray-200">Form still under development. Please be patient.</p>
-            <form className="flex flex-col gap-4 max-w-md mx-auto">
+            <p className="mb-4 text-sm text-start text-gray-200">
+              Form still under development. Please be patient.
+            </p>
+            <form
+              className="flex flex-col gap-4 max-w-md mx-auto"
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <input
                 type="text"
                 placeholder="Your Name"
@@ -111,6 +145,7 @@ const Contact = () => {
               ></textarea>
               <button
                 type="submit"
+                value="Send"
                 className="scale-95 hover:scale-105 cursor-pointer bg-yellow-400 hover:bg-yellow-500 transition text-black font-bold py-2 px-4 rounded-md"
               >
                 Send Message

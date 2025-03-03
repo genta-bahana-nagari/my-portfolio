@@ -129,7 +129,10 @@ const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState(0);
 
   return (
-    <div className="py-15 bg-black text-white text-center" id="skills">
+    <div
+      className="scroll-mt-20 py-15 bg-black text-white text-center"
+      id="skills"
+    >
       <h2 className="text-3xl font-bold mb-6">My Skills</h2>
 
       {/* Kategori Tabs */}

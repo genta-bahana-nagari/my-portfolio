@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className="bg-black text-white">
+    <div id="about" className="bg-black text-white scroll-mt-20">
       <motion.div
         className="container mx-auto grid md:grid-cols-2 items-center gap-2 md:gap-8 px-6
         md:px-12"

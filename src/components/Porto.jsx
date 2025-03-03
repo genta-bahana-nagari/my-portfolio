@@ -96,7 +96,10 @@ const Porto = () => {
   const selectedData = portfolioItems[selectedCategory];
 
   return (
-    <div id="porto" className="py-10 bg-black text-white text-center">
+    <div
+      id="porto"
+      className="scroll-mt-20 py-10 bg-black text-white text-center"
+    >
       <h2 className="text-4xl font-bold mb-12 text-white">Genta's Portfolio</h2>
 
       {/* Tabs */}
