@@ -1,0 +1,46 @@
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.modal-content {
+  width: 88%;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.modal-footer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.modal-footer:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 75%;
+  }
+
+  .modal-footer p {
+    font-size: 13px;
+  }
+}

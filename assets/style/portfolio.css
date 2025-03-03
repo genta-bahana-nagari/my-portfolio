@@ -1,0 +1,44 @@
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.link-github {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.link-github:hover {
+  text-decoration: underline;
+  color: #9b9b9b;
+}
+
+.card img,
+.card-body {
+  color: white;
+  background-color: black;
+  border: solid 1px white;
+}
+
+#to-view-code {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #option {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #to-view-code {
+    margin: 15px;
+    font-size: 13px;
+  }
+}

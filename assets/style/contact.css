@@ -1,0 +1,35 @@
+.container.final {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.final-para {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  color: white;
+}
+
+.account {
+  gap: 25px;
+}
+
+.social-account {
+  color: white;
+  font-size: 1.75em;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-account:hover {
+  color: #e0a800;
+}
+
+@media (max-width: 768px) {
+  .social-account {
+    font-size: 1.2em;
+    margin-right: 10px;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+.cell-skill,
+.cell-experience {
+  text-align: center;
+}
+
+.icon-skill,
+.icon-experience {
+  max-width: 100px;
+  max-height: auto;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5%;
+}
+
+.icon-skill,
+.icon-experience {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .icon-skill,
+  .icon-experience {
+    max-width: 55px;
+    margin: 5%;
+  }
+}
