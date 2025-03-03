@@ -19,7 +19,8 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col mt-10 items-center justify-center min-h-screen px-6 sm:px-8 md:px-10 bg-black text-white text-center"
+      className="flex flex-col mt-10 items-center
+      justify-center min-h-screen px-6 sm:px-8 md:px-10 bg-black text-white text-center"
     >
       <motion.div
         className="flex flex-col items-center gap-6 md:gap-8"

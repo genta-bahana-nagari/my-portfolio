@@ -10,7 +10,16 @@ const Contact = () => {
       id="contact"
     >
       <div className="text-center">
-        <h2 className="text-4xl font-bold mb-2">Contact Me</h2>
+        <h2
+          className="text-4xl font-bold mb-2"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1 }}
+          exit={{ opacity: 0, y: -50 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: false, amount: 0.3 }}
+        >
+          Contact Me
+        </h2>
         <motion.div
           className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 sm:px-8 md:px-12"
           initial={{ opacity: 0, y: 50 }}
@@ -64,7 +73,9 @@ const Contact = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <span className="text-white">{social.icon}</span>
-                  <span className="text-white text-sm md:text-2xl">{social.label}</span>
+                  <span className="text-white text-sm md:text-2xl">
+                    {social.label}
+                  </span>
                   <p className="text-gray-300 text-sm">{social.account}</p>
                 </motion.a>
               ))}
