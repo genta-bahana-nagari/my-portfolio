@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const OrganizationCard = ({ name, role, what_i_do, image }) => {
+const OrganizationCard = ({ name, role, year, what_i_do, image }) => {
   return (
     <motion.div
       className="flex flex-row items-center text-left bg-gray-900 text-white p-5 rounded-lg shadow-lg w-full max-w-3xl"
@@ -21,6 +21,7 @@ const OrganizationCard = ({ name, role, what_i_do, image }) => {
       <div className="flex flex-col">
         <h3 className="text-lg md:text-xl font-semibold">{name}</h3>
         <p className="text-sm md:text-base text-yellow-400 font-medium">{role}</p>
+        <p className="text-sm md:text-base text-yellow-400 font-medium">{year}</p>
         <p className="text-xs md:text-base text-gray-300 mt-2">{what_i_do}</p>
       </div>
     </motion.div>

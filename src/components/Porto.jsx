@@ -62,13 +62,15 @@ const portfolioItems = [
     items: [
       {
         name: "PAKS Stembayo",
-        role: "Public Relations Staff of Karawitan",
+        year: "2023-2024",
+        role: "Active member and Staff of Karawitan",
         what_i_do:
           "Actively participated in Karawitan Orchestra performances. Also served in Public Relations position, organizing and leading cultural events within the school.",
         image: PAKS,
       },
       {
         name: "Karawitan Stembayo",
+        year: "2023-2024",
         role: "Public Relations Staff & Performer",
         what_i_do:
           "Contributed to traditional music performances in school and community events, enhancing cultural appreciation through Javanese gamelan.",
@@ -76,6 +78,7 @@ const portfolioItems = [
       },
       {
         name: "Junior High Council",
+        year: "2020-2021",
         role: "Chairman of Catholic Religious Division",
         what_i_do:
           "Led school activities, facilitated communication between students and faculty, and organized events to enhance student engagement.",

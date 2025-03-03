@@ -14,10 +14,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "xxxxx", // ganti service id emailjs
-        "template_xxxk", // ganti template id emailjs
-        form.current,
-        "xxxxx" // ganti public key akun emailjs kamu
+        "service_b3aw2eo",
+        "template_76zp32k",
+        form.current, 
+        "xhkwU5hilFqD7CEcU",
       )
       .then(
         (result) => {
@@ -128,9 +128,6 @@ const Contact = () => {
             <h2 className="mb-4 text-2xl font-bold text-white text-center md:text-start max-w-md mx-auto">
               Keep in touch
             </h2>
-            <p className="mb-4 text-sm text-start text-gray-200">
-              Form still under development. Please be patient.
-            </p>
             <form
               ref={form}
               onSubmit={sendEmail}
