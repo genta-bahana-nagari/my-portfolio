@@ -118,6 +118,7 @@ const Porto = () => {
           <div className="flex justify-center">
             <a
               href="https://drive.google.com/file/d/1_Vc9yrPF4kCr_UdkXUhno7jz0hDBGyP3/view?usp=sharing"
+              target="_blank"
               download="Genta_Portfolio.pdf"
               className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-500 transition"
             >

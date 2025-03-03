@@ -92,6 +92,7 @@ const Contact = () => {
             <h2 className="mb-4 text-2xl font-bold text-white text-center md:text-start max-w-md mx-auto">
               Keep in touch
             </h2>
+            <p className="mb-4 text-sm text-start text-gray-200">Form still on development. Please be patient.</p>
             <form className="flex flex-col gap-4 max-w-md mx-auto">
               <input
                 type="text"
