@@ -17,7 +17,8 @@ const portfolioItems = [
         I love building anything about technology. My expertise lies in crafting
         responsive, user-friendly experiences using modern frameworks and
         styling tools. Also tinkering with numerous modules to build a
-        masterpiece. Check my <span className="text-yellow-300">other projects</span> on{" "}
+        masterpiece. Check my{" "}
+        <span className="text-yellow-300">other projects</span> on{" "}
         <a
           href="https://github.com/genta-bahana-nagari"
           target="_blank"
@@ -49,7 +50,7 @@ const portfolioItems = [
         desc: "Built for P5 school event. Perfect combination of price-friendly components and innovations.",
         image: esp_cam,
         previewLink: null,
-        codeLink: "TBA",
+        codeLink: "https://github.com/genta-bahana-nagari/ESP32_Cam_Servo",
       },
     ],
   },
@@ -59,9 +60,27 @@ const portfolioItems = [
       "Beyond coding, I’m passionate about teamwork and leadership. I’ve played an active role in cultural organizations and student councils, where I’ve led initiatives that spark creativity, strengthen collaboration, and bring people together. Whether it's preserving traditions or driving impactful projects, I love working with teams to turn ideas into reality!",
     component: "OrganizationCard",
     items: [
-      { name: "Karawitan Stembayo", image: KARAWITAN },
-      { name: "PAKS Stembayo", image: PAKS },
-      { name: "Junior High Council", image: OSIS_SMP },
+      {
+        name: "PAKS Stembayo",
+        role: "Public Relations Staff of Karawitan",
+        what_i_do:
+          "Actively participated in Karawitan Orchestra performances. Also served in Public Relations position, organizing and leading cultural events within the school.",
+        image: PAKS,
+      },
+      {
+        name: "Karawitan Stembayo",
+        role: "Public Relations Staff & Performer",
+        what_i_do:
+          "Contributed to traditional music performances in school and community events, enhancing cultural appreciation through Javanese gamelan.",
+        image: KARAWITAN,
+      },
+      {
+        name: "Junior High Council",
+        role: "Chairman of Catholic Religious Division",
+        what_i_do:
+          "Led school activities, facilitated communication between students and faculty, and organized events to enhance student engagement.",
+        image: OSIS_SMP,
+      },
     ],
   },
   {
@@ -120,7 +139,8 @@ const Porto = () => {
               href="https://drive.google.com/file/d/1_Vc9yrPF4kCr_UdkXUhno7jz0hDBGyP3/view?usp=sharing"
               target="_blank"
               download="Genta_Portfolio.pdf"
-              className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-500 transition"
+              className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg
+              hover:bg-yellow-500 transition-all hover:scale-115"
             >
               Download Here
             </a>
