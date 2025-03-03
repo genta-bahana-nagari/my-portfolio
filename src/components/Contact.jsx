@@ -13,18 +13,26 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
-      })
+      .sendForm(
+        "xxxxx", // ganti service id emailjs
+        "template_xxxk", // ganti template id emailjs
+        form.current,
+        "xxxxx" // ganti public key akun emailjs kamu
+      )
       .then(
-        () => {
-          console.log("SUCCESS!");
+        (result) => {
+          console.log("Success:", result.text);
+          alert("Message sent successfully!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log("Failed:", error.text);
+          alert("Failed to send message. Try again.");
         }
       );
+
+    e.target.reset(); // Reset form setelah terkirim
   };
+
 
   return (
     <div
@@ -124,28 +132,33 @@ const Contact = () => {
               Form still under development. Please be patient.
             </p>
             <form
-              className="flex flex-col gap-4 max-w-md mx-auto"
               ref={form}
               onSubmit={sendEmail}
+              className="flex flex-col gap-4 max-w-md mx-auto"
             >
               <input
                 type="text"
+                name="user_name"
                 placeholder="Your Name"
+                required
                 className="w-full p-3 bg-black text-white rounded-md border border-gray-700 focus:ring-2 focus:ring-amber-50 outline-none"
               />
               <input
                 type="email"
+                name="user_email"
                 placeholder="Your Email"
+                required
                 className="w-full p-3 bg-black text-white rounded-md border border-gray-700 focus:ring-2 focus:ring-amber-50 outline-none"
               />
               <textarea
+                name="message"
                 placeholder="Your Message"
                 rows="4"
+                required
                 className="w-full p-3 bg-black text-white rounded-md border border-gray-700 focus:ring-2 focus:ring-amber-50 outline-none"
               ></textarea>
               <button
                 type="submit"
-                value="Send"
                 className="scale-95 hover:scale-105 cursor-pointer bg-yellow-400 hover:bg-yellow-500 transition text-black font-bold py-2 px-4 rounded-md"
               >
                 Send Message
