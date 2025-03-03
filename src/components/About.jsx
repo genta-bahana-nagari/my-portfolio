@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div id="about" className="bg-black text-white">
       <motion.div
-        className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6
+        className="container mx-auto grid md:grid-cols-2 items-center gap-2 md:gap-8 px-6
         md:px-12"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1}}
@@ -20,7 +20,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <p className="mt-3 my-8 text-1xl scale-95 font-bold text-white text-center max-w-md mx-auto">
+          <p className="mt-3 my-8 text-sm md:text-base font-bold text-white text-center max-w-md mx-auto">
             I'm a dedicated{" "}
             <span className="text-yellow-400">
               Vocational High School student
@@ -62,7 +62,7 @@ const About = () => {
 
       {/* Quote Section */}
       <motion.div
-        className="container mx-auto flex flex-col items-center text-center px-6 py-5 md:px-12 mt-10"
+        className="container mx-auto flex flex-col items-center text-center px-6 pt-10 md:py-5 md:px-12 mt-10"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -70,19 +70,19 @@ const About = () => {
       >
         {/* Garis dekorasi atas */}
         <motion.div
-          className="w-35 h-1 bg-white rounded-full mb-4"
+          className="w-35 h-1 bg-white rounded-full md-2 md:mb-4"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         />
 
-        <h1 className="text-2xl md:text-3xl py-3 font-serif italic text-white font-bold">
+        <h1 className="text-xl md:text-3xl py-3 font-serif italic text-white font-bold">
           "Help me to do it myself"
         </h1>
 
         {/* Garis dekorasi bawah */}
         <motion.div
-          className="w-35 h-1 bg-white rounded-full mt-4"
+          className="w-35 h-1 bg-white rounded-full md-2 md:mt-4"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}

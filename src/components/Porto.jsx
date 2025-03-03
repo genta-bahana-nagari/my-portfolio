@@ -1,38 +1,64 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ProjectCard from "/src/components/porto_cards/ProjectCards";
+import OrganizationCard from "/src/components/porto_cards/OrganizationCards";
 import KARAWITAN from "/src/assets/images/KARAWITAN.png";
 import PAKS from "/src/assets/images/PAKS.png";
 import OSIS_SMP from "/src/assets/images/OSIS_SMP.png";
+import Sinvent from "/src/assets/images/Sinvent.png";
+import Studio from "/src/assets/images/Studio.jpg";
+import esp_cam from "/src/assets/images/esp_cam.jpg";
 
 const portfolioItems = [
   {
     title: "My Projects",
     description:
       "I love building interactive and visually stunning web applications! My expertise lies in crafting responsive, user-friendly experiences using modern frameworks and styling tools.",
+    component: "ProjectCard",
     items: [
-      { name: "Inventory System", desc: "Laravel based inventory system with high reliability and data acuracy." },
-      { name: "Music Studio", desc: "Inspired from Stembayo Karawitan Group, with a touch of Wordpress styling." },
-      { name: "ESP32 Camera", desc: "Built for P5 school event. Perfect combination of cheap components and inovations." },
+      {
+        name: "Inventory System",
+        desc: "Laravel based inventory system with high reliability and data accuracy.",
+        image: Sinvent,
+        previewLink: "https://sinvent.gentabahana.me",
+        codeLink: "https://github.com/genta-bahana-nagari/sinvent24",
+      },
+      {
+        name: "Music Studio",
+        desc: "Inspired from Stembayo Karawitan Group, with a touch of Wordpress styling.",
+        image: Studio,
+        previewLink: "https://studio.gentabahana.me",
+        codeLink: null,
+      },
+      {
+        name: "ESP32 Camera",
+        desc: "Built for P5 school event. Perfect combination of price-friendly components and innovations.",
+        image: esp_cam,
+        previewLink: null,
+        codeLink: "TBA",
+      },
     ],
   },
   {
-    title: "Organization Experience",
+    title: "Organization",
     description:
       "Beyond coding, I thrive in teamwork and leadership. I've contributed to cultural organizations and student councils, leading initiatives that foster creativity and collaboration!",
+    component: "OrganizationCard",
     items: [
-      { name: "Karawitan Stembayo", img: KARAWITAN },
-      { name: "PAKS Stembayo", img: PAKS },
-      { name: "Junior High Council", img: OSIS_SMP },
+      { name: "Karawitan Stembayo", image: KARAWITAN },
+      { name: "PAKS Stembayo", image: PAKS },
+      { name: "Junior High Council", image: OSIS_SMP },
     ],
   },
 ];
 
 const Porto = () => {
   const [selectedCategory, setSelectedCategory] = useState(0);
+  const selectedData = portfolioItems[selectedCategory];
 
   return (
-    <div className="py-16 bg-black text-white text-center">
-      <h2 className="text-4xl font-bold mb-8 text-white">Genta's Portfolio</h2>
+    <div id="porto" className="py-10 bg-black text-white text-center">
+      <h2 className="text-4xl font-bold mb-12 text-white">Genta's Portfolio</h2>
 
       {/* Tabs */}
       <div className="flex justify-center gap-6 mb-8">
@@ -61,33 +87,19 @@ const Porto = () => {
         transition={{ duration: 0.5 }}
       >
         <h3 className="text-2xl font-semibold mb-4 text-yellow-400">
-          {portfolioItems[selectedCategory].title}
+          {selectedData.title}
         </h3>
-        <p className="text-gray-300 mb-6">
-          {portfolioItems[selectedCategory].description}
-        </p>
+        <p className="text-sm md:text-lg text-white mb-6">{selectedData.description}</p>
 
         {/* Card Items */}
-        <div className="flex flex-row justify-center gap-4">
-          {portfolioItems[selectedCategory].items.map((item, index) => (
-            <motion.div
-              key={index}
-              className="p-4 bg-black rounded-lg shadow-md"
-              initial={{ scale: 0.9 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              {item.img ? (
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  className="h-24 mx-auto mb-4"
-                />
-              ) : null}
-              <h4 className="text-xl font-semibold">{item.name}</h4>
-              {item.desc && <p className="text-gray-300 mt-2">{item.desc}</p>}
-            </motion.div>
-          ))}
+        <div className="flex flex-wrap justify-center gap-8">
+          {selectedData.items.map((item, index) =>
+            selectedData.component === "ProjectCard" ? (
+              <ProjectCard key={index} {...item} />
+            ) : (
+              <OrganizationCard key={index} {...item} />
+            )
+          )}
         </div>
       </motion.div>
     </div>
