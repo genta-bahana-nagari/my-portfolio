@@ -50,7 +50,7 @@ const Hero = () => {
             Hi, I'm{" "}
             <span className="text-yellow-400">
               <Typewriter
-                words={["Genta Bahana Nagari"]}
+                words={["Your Name Here"]}
                 loop={false}
                 typeSpeed={100}
                 deleteSpeed={50}
@@ -60,14 +60,14 @@ const Hero = () => {
           </h1>
           <p className="mt-3 text-sm sm:text-base md:text-lg text-gray-300 px-4 sm:px-10">
             A <span className="text-yellow-400">Developer</span> who loves
-            crafting software, a{" "}
-            <span className="text-yellow-400">Network and System Engineer</span>{" "}
-            passionate about infrastructure, and a{" "}
-            <span className="text-yellow-400">Culture Enthusiast</span> with a
-            deep love for arts, specially
+            [your activity in tech stuff], a{" "}
+            <span className="text-yellow-400">[your position in tech stuff]</span>{" "}
+            passionate about [your favourite things], and a{" "}
+            <span className="text-yellow-400">[Another things you like about] Enthusiast</span> with a
+            deep love for [bla bla bla], specially
             <span className="text-yellow-400">
               {" "}
-              karawitan, musical theater, and orchestra.
+              [your favourite details here].
             </span>
           </p>
 
