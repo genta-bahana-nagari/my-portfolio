@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import image1 from "/src/assets/images/profile_1.jpg";
-import image2 from "/src/assets/images/profile_2.jpg";
+import image1 from "/src/assets/images/your_profile_image";
+import image2 from "/src/assets/images/your_2nd_profile_image";
 
 const images = [image1, image2];
 
