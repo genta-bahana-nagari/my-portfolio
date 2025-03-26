@@ -1,12 +1,55 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](./screenshot_1.png)
 
-Currently, two official plugins are available:
+## 🚀 About the Project
+This is my personal portfolio website built using **React, Vite, and Tailwind CSS**. It showcases my skills, projects, and experiences in an interactive and modern UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend:** React, Vite, Tailwind CSS
+- **Deployment:** Vercel / Netlify / GitHub Pages / Cloud VPS (with npm run build method for deployment)
+- **Live Demo:** [My Portfolio](https://gentabahana.me/)
 
-## Expanding the ESLint configuration
+## ✨ Features
+- Responsive design with Tailwind CSS
+- Smooth animations and transitions
+- Dynamic project showcase
+- Contact form with email integration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation & Setup
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🚀 Deployment
+To deploy the project, use one of these services:
+- **Vercel:** `vercel --prod`
+- **Netlify:** Connect your repo and deploy
+- **GitHub Pages:** Use `gh-pages` package
+
+## 📷 Screenshots
+![Home Page](./screenshot_1.png)
+![Projects Section](./screenshot_2.png)
+![Contact Section](./screenshot_3.png)
+
+## 👤 Author
+- **Your Name** – [LinkedIn](https://www.linkedin.com/in/genta-bahana-nagari/) | [GitHub](https://github.com/genta-bahana-nagari)
+
+## 🌟 Show Your Support
+If you like this project, feel free to give it a ⭐ on GitHub!
+
+## 📜 License
+This project is licensed under the **MIT License**.
