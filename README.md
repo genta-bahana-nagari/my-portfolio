@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![Portfolio Preview](./screenshot_1.png)
+![Portfolio Preview](./screenshot_1.jpeg)
 
 ## 🚀 About the Project
 This is my personal portfolio website built using **React, Vite, and Tailwind CSS**. It showcases my skills, projects, and experiences in an interactive and modern UI.
@@ -41,9 +41,9 @@ To deploy the project, use one of these services:
 - **GitHub Pages:** Use `gh-pages` package
 
 ## 📷 Screenshots
-![Home Page](./screenshot_1.png)
-![Projects Section](./screenshot_2.png)
-![Contact Section](./screenshot_3.png)
+![Home Page](./screenshot_1.jpeg)
+![Projects Section](./screenshot_2.jpeg)
+![Contact Section](./screenshot_3.jpeg)
 
 ## 👤 Author
 - **Your Name** – [LinkedIn](https://www.linkedin.com/in/genta-bahana-nagari/) | [GitHub](https://github.com/genta-bahana-nagari)
