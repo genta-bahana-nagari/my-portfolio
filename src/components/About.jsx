@@ -23,9 +23,9 @@ const About = () => {
           <p className="mt-3 my-8 text-sm md:text-base font-bold text-white text-center max-w-md mx-auto">
             I'm a dedicated{" "}
             <span className="text-yellow-400">
-              Vocational High School student
+              [mention your position/jobs/education life]
             </span>{" "}
-            from Yogyakarta, Indonesia. Passionate about learning and adapting
+            from [your city], [your country]. Passionate about learning and adapting
             to new challenges, I am currently preparing for an
             <span className="text-yellow-400"> internship</span> to gain
             hands-on experience and enhance my skills through real-world
@@ -36,10 +36,10 @@ const About = () => {
             proud, and contribute effectively in every task I take on. I
             specialize in{" "}
             <span className="text-yellow-400">
-              Web Development, Network,{" "}
+              [your favourite tech branch]{" "}
             </span>{" "}
             <span className="text-white">and</span>
-            <span className="text-yellow-400"> System Administration</span>,
+            <span className="text-yellow-400"> [your another favourite tech branch]</span>,
             enjoying the process of solving complex problems, collaborating with
             teams, and creating valuable solutions.
           </p>
