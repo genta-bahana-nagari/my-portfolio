@@ -70,33 +70,33 @@ const Contact = () => {
               {[
                 {
                   icon: <FaLinkedin />,
-                  link: "https://www.linkedin.com/in/genta-bahana-nagari",
+                  link: "https://www.linkedin.com/in/your-linkedin-username",
                   label: "LinkedIn",
-                  account: "genta-bahana-nagari",
+                  account: "your-linkedin-account",
                 },
                 {
                   icon: <FaInstagram />,
-                  link: "https://instagram.com/gentabahananagari",
+                  link: "https://instagram.com/your-instagram-username",
                   label: "Instagram",
-                  account: "gentabahananagari",
+                  account: "your-instagram-account",
                 },
                 {
                   icon: <FaGithub />,
-                  link: "https://github.com/genta-bahana-nagari",
+                  link: "https://github.com/your-github-username",
                   label: "GitHub",
-                  account: "genta-bahana-nagari",
+                  account: "your-github-account",
                 },
                 {
                   icon: <MdEmail />,
-                  link: "mailto:gentapossenti@gmail.com",
+                  link: "mailto:your-email@gmail.com",
                   label: "Email",
-                  account: "gentapossenti@gmail.com",
+                  account: "your-email@gmail.com",
                 },
                 {
                   icon: <FaDiscord />,
-                  link: "https://discord.com/users/1190112258181837031",
+                  link: "https://discord.com/users/your-discord-id",
                   label: "Discord",
-                  account: "genta_bahana_nagari",
+                  account: "your-discord-name",
                 },
               ].map((social, index) => (
                 <motion.a
