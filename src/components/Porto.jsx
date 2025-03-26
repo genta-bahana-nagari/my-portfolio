@@ -2,12 +2,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "/src/components/porto_cards/ProjectCards";
 import OrganizationCard from "/src/components/porto_cards/OrganizationCards";
-import KARAWITAN from "/src/assets/images/KARAWITAN.png";
-import PAKS from "/src/assets/images/PAKS.png";
-import OSIS_SMP from "/src/assets/images/OSIS_SMP.png";
-import Sinvent from "/src/assets/images/Sinvent.png";
-import Studio from "/src/assets/images/Studio.jpg";
-import esp_cam from "/src/assets/images/esp_cam.jpg";
+import image_1 from "/src/assets/images/your_image_1.jpg";
+import image_2 from "/src/assets/images/your_image_2.jpg";
+import image_3 from "/src/assets/images/your_image_3.jpg";
+import image_4 from "/src/assets/images/your_image_4.jpg";
+import image_5 from "/src/assets/images/your_image_5.jpg";
+import image_6 from "/src/assets/images/your_image_6.jpg";
 
 const portfolioItems = [
   {
@@ -20,7 +20,7 @@ const portfolioItems = [
         masterpiece. Check my{" "}
         <span className="text-yellow-300">other projects</span> on{" "}
         <a
-          href="https://github.com/genta-bahana-nagari"
+          href="https://github.com/your-github-username"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-yellow-300 hover:underline transition-all duration-200"
@@ -32,57 +32,57 @@ const portfolioItems = [
     component: "ProjectCard",
     items: [
       {
-        name: "Inventory System",
-        desc: "Laravel based inventory system with high reliability and data accuracy.",
-        image: Sinvent,
-        previewLink: "https://sinvent.gentabahana.me",
-        codeLink: "https://github.com/genta-bahana-nagari/sinvent24",
+        name: "Project Title",
+        desc: "Type your project description here",
+        image: image_1,
+        previewLink: "your link to demo project",
+        codeLink: "your github repo",
       },
       {
-        name: "Music Studio",
-        desc: "Inspired from Stembayo Karawitan Group, with a touch of Wordpress styling.",
-        image: Studio,
-        previewLink: "https://studio.gentabahana.me",
-        codeLink: null,
+        name: "Project Title",
+        desc: "Type your project description here",
+        image: image_2,
+        previewLink: "your link to demo project",
+        codeLink: "your github repo",
       },
       {
-        name: "ESP32 Camera",
-        desc: "Built for P5 school event. Perfect combination of price-friendly components and innovations.",
-        image: esp_cam,
-        previewLink: null,
-        codeLink: "https://github.com/genta-bahana-nagari/ESP32_Cam_Servo",
+        name: "Project Title",
+        desc: "Type your project description here",
+        image: image_3,
+        previewLink: "your link to demo project",
+        codeLink: "your github repo",
       },
     ],
   },
   {
     title: "Organization",
     description:
-      "Beyond coding, I’m passionate about teamwork and leadership. I’ve played an active role in cultural organizations and student councils, where I’ve led initiatives that spark creativity, strengthen collaboration, and bring people together. Whether it's preserving traditions or driving impactful projects, I love working with teams to turn ideas into reality!",
+      "Beyond coding, I’m passionate about [your organization, or you can change to your fav stuff. Get creative folks!]",
     component: "OrganizationCard",
     items: [
       {
-        name: "PAKS Stembayo",
-        year: "2023-2024",
-        role: "Active member and Staff of Karawitan",
+        name: "Organization Name",
+        year: "Year or period of yout duty",
+        role: "Your role in that organization",
         what_i_do:
-          "Actively participated in Karawitan Orchestra performances. Also served in Public Relations position, organizing and leading cultural events within the school.",
-        image: PAKS,
+          "Type your details here.",
+        image: image_4,
       },
       {
-        name: "Karawitan Stembayo",
-        year: "2023-2024",
-        role: "Public Relations Staff & Performer",
+        name: "Organization Name",
+        year: "Year or period of yout duty",
+        role: "Your role in that organization",
         what_i_do:
-          "Contributed to traditional music performances in school and community events, enhancing cultural appreciation through Javanese gamelan.",
-        image: KARAWITAN,
+          "Type your details here.",
+        image: image_5,
       },
       {
-        name: "Junior High Council",
-        year: "2020-2021",
-        role: "Chairman of Catholic Religious Division",
+        name: "Organization Name",
+        year: "Year or period of yout duty",
+        role: "Your role in that organization",
         what_i_do:
-          "Led school activities, facilitated communication between students and faculty, and organized events to enhance student engagement.",
-        image: OSIS_SMP,
+          "Type your details here.",
+        image: image_6,
       },
     ],
   },
@@ -141,8 +141,9 @@ const Porto = () => {
         {/* Card Items */}
         {selectedData.component === "DownloadPortfolio" ? (
           <div className="flex justify-center">
+            {/* Portfolio links */}
             <a
-              href="https://drive.google.com/file/d/1_Vc9yrPF4kCr_UdkXUhno7jz0hDBGyP3/view?usp=sharing"
+              href="#"
               target="_blank"
               download="Genta_Portfolio.pdf"
               className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg
