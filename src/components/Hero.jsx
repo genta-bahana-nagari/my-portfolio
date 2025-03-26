@@ -81,9 +81,10 @@ const Hero = () => {
             >
               See My Works
             </motion.a>
-
+            
+            {/* Your CV */}
             <motion.a
-              href="https://drive.google.com/file/d/1NmUUAFNKFQH_wYrx2fyxm24nF3HVjBl-/view?usp=drive_link"
+              href="#"
               target="_blank"
               whileHover={{ scale: 1.1 }}
               className="w-full sm:w-auto rounded-full bg-yellow-400 px-5 sm:px-6 py-2 sm:py-3 text-black font-semibold shadow-lg 
