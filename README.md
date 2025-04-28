@@ -1,7 +1,5 @@
 # Personal Portfolio
 
-![Portfolio Preview](./screenshot_1.jpeg)
-
 ## 🚀 About the Project
 This is my personal portfolio website built using **React, Vite, and Tailwind CSS**. It showcases my skills, projects, and experiences in an interactive and modern UI.
 
