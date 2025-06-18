@@ -3,10 +3,14 @@
 ## 🚀 About the Project
 This is my personal portfolio website built using **React, Vite, and Tailwind CSS**. It showcases my skills, projects, and experiences in an interactive and modern UI.
 
+---
+
 ## 🛠️ Tech Stack
 - **Frontend:** React, Vite, Tailwind CSS
 - **Deployment:** Vercel / Netlify / GitHub Pages / Cloud VPS (with npm run build method for deployment)
-- **Live Demo:** [My Portfolio](https://gentabahana.me/)
+- **Live Demo:** [gentabahana.me](https://gentabahana.me/)
+
+---
 
 ## ✨ Features
 - Responsive design with Tailwind CSS
@@ -14,42 +18,73 @@ This is my personal portfolio website built using **React, Vite, and Tailwind CS
 - Dynamic project showcase
 - Contact form with email integration
 
+---
+
 ## 📦 Installation & Setup
+
 To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/genta-bahana-nagari/portfolio-page-v2.git
-   ## or you can do:
-   git clone https://github.com/genta-bahana-nagari/portfolio-page-v2.git your_directory_name
-   cd portfolio-page-v2 # or other directories
+   cd portfolio-page-v2
    ```
+
 2. **Install dependencies:**
    ```sh
    npm install
    ```
+
 3. **Run the development server:**
    ```sh
    npm run dev
    ```
+
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+---
+
 ## 🚀 Deployment
+
 To deploy the project, use one of these services:
-- **Vercel:** `vercel --prod`
+
+- **Vercel:** `vercel --prod`, or you can connect your repo and deploy
 - **Netlify:** Connect your repo and deploy
 - **GitHub Pages:** Use `gh-pages` package
+- **Nginx or Apache2:** With your private server or some sort of.
+
+### ⚠️ Notes
+If you want to self host it with Nginx or Apache, it's recomended to build the project:
+   ```sh
+   npm run buld
+   ```
+Then put the dist folder to your server.
+
+---
 
 ## 📷 Screenshots
-![Home Page](./screenshot_1.jpeg)
-![Projects Section](./screenshot_2.jpeg)
+
+![Home Page](./screenshot_1.jpeg)  
+![Projects Section](./screenshot_2.jpeg)  
 ![Contact Section](./screenshot_3.jpeg)
+
+---
 
 ## 👤 Author
 - **Genta Bahana Nagari** – [LinkedIn](https://www.linkedin.com/in/genta-bahana-nagari/) | [GitHub](https://github.com/genta-bahana-nagari)
 
+---
+
 ## 🌟 Show Your Support
-If you like this project, feel free to give it a ⭐ on GitHub!
+If you find this script helpful, feel free to ⭐ the repository and share it with others!
+
+---
 
 ## 📜 License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📜 License
+
 This project is licensed under the **MIT License**.
