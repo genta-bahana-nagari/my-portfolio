@@ -26,8 +26,8 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/genta-bahana-nagari/portfolio-page-v2.git
-   cd portfolio-page-v2
+   git clone -b main --single-branch https://github.com/genta-bahana-nagari/my-portfolio.git
+   cd my-portfolio
    ```
 
 2. **Install dependencies:**
